@@ -1,0 +1,419 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d4ef3a9c89.js" crossorigin="anonymous"></script>
+    <title>Ice creams</title>
+
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ice Creams</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">about</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="services">Softy</a></li>
+            <li><a class="dropdown-item" href="{% url 'dryfruit'%} ">Dry fruits ice creams</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="cake">Cake ice creams</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact</a>
+        </li>
+      </ul>
+<!--      <form class="d-flex">-->
+<!--        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+<!--      </form>-->
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!--  crousal-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+<!--   crousal-->
+  <div class="container-fluid    px-0">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/c10.jpg" class="d-block w-100 " alt="..." style="width:500px;height:400px;">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/c2.jpg" class="d-block w-100 " alt="..." style="width:500px;height:400px;">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/c3.jpg" class="d-block w-100" alt="..." style="width:500px;height:400px;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--  cards-->
+
+<!--  Softy's-->
+
+  <div class="container  ">
+    <h1 class="my-4 text-center">Select from  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-heart-eyes-fill" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.559 5.448a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zm-.07-5.448c1.397-.864 3.543 1.838-.953 3.434-3.067-3.554.19-4.858.952-3.434z"/>
+    </svg>ur range of Ice Creams </h1>
+<!--<a  href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">softy's</a>-->
+     <div class=" display-3 my-4 text-dark "><u><i><strong>SOFTY'S AND CONES</strong></i></u></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c4.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                 <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                <img src="/static/c5.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+            <div class="card-body">
+              <p class="card-text">They are the mixed flavours having pure chocolate or chocolate+vanilla mix or pure vanilla ice cream .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                  <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                <img src="/static/c6.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+            <div class="card-body">
+              <p class="card-text">There are more flavours in range(Black Current ,Mango, Stawberry and many more : )</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                  <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+     <a class="nav-link display-6 text-center text-dark font-italic font-weight-bold" href="/services" style="margin-bottom:60px; margin-top:0px;"><u><i> For more  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></i></u></a>
+
+<!--      Dry fruits-->
+<!--      <div class=" display-3 text-dark " style="margin-bottom:25px;"><u><i><strong>DRY FRUIT ICE CREAM'S</strong></i></u></div>-->
+<div class="container my-4 ">
+          <div class=" display-3 text-dark " style="margin-bottom:25px;"><u><i><strong>DRY FRUIT ICE CREAM'S</strong></i></u></div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">
+          <div class="card shadow-sm">
+              <img src="/static/c11.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+            <div class="card-body">
+              <p class="card-text"> Chocolate Dry Fruit Ice Cream and There are chocolate choco chips sprinkles to create a fun decoration along with cherry .  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                    <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="/static/c12.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This ice cream is made of milk (khoya/mawa ) enriched with some almonds and other dry fruits they are sprinkled on this ice cream .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                    <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+            <img src="/static/c13.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+            <div class="card-body">
+              <p class="card-text">This is butter scotch ice cream enriched with dry fruits and some liquid chocolate is poured on the top along with a cherry or a waffle .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                     <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+</div>
+  </div>
+  <a class="nav-link display-6 text-center text-dark font-italic font-weight-bold" href="/dryfruit" style="margin-bottom:60px; margin-top:0px;"><u><i> For more <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></i></u></a>
+
+
+<!--cake ice cream-->
+
+
+<!--  <a class="nav-link display-3 my-3 text-dark font-italic font-weight-bold" href="/services"><u><i>CAKE ICE CREAM'S</i></u></a>-->
+<div class="container ">
+    <div class=" display-3 text-dark " style="margin-bottom:25px;"><u><i><strong>CAKE ICE CREAM'S</strong></i></u></div>
+
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">
+
+          <div class="card shadow-sm">
+<!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                <img src="/static/c14.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+            <div class="card-body">
+              <p class="card-text">This is a cake ice cream made of chocolate flavour and the special part is inner layer is also made of chocolate.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                    <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col">
+          <div class="card shadow-sm">
+<!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                <img src="/static/c15.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is vanilla cake ice cream , the inner part of this cake is made of butter scotch flavour and some fennel are sprinkled on it to make it more tastier</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                    <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col">
+          <div class="card shadow-sm">
+<!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                <img src="/static/c16.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a red velvet cake ice cream , the inner layer of this cake is made of vanilla and on top small vanilla shots are also there.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                   <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+  <a class="nav-link display-6 text-center text-dark font-italic font-weight-bold" href="/cake" style="margin-bottom:60px; margin-top:0px;"><u><i> For more <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></i></u></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  footer-->
+
+
+  <footer class="page-footer bg-dark">
+      <div class="bg-success">
+          <div class="container">
+              <div class="row py-4 d-flex align-items-center">
+                  <div class="col-md-12 text-center">
+                      <a href="https://www.facebook.com/vipul.mongia.9" ><i class="fab fa-facebook text-white mr-4  " style="font-size:40px;"></i></a>
+                      <a href="https://www.instagram.com/"><i class="fab fa-instagram text-white mr-4 " style="font-size:40px;"></i></a>
+                      <a href="https://www.linkedin.com/feed/" ><i class="fab fa-linkedin text-white mr-4" style="font-size:40px;"></i></a>
+
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+
+
+      <div class="container text-center text-md-left mt-5">
+          <div class="row">
+
+              <div class="col-md-2 mx-auto  mb-4">
+                  <h6 class="text-uppercase font-weight-bold text-white"> the providers</h6>
+                  <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width:125px; height:4px;">
+                  <p class="mt-2 text-white">Mongia's Ice Cream </p>
+
+              </div>
+               <div class="col-md-2 mx-auto  mb-4">
+                  <h6 class="text-uppercase font-weight-bold text-white"> products</h6>
+                  <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width:85px; height:4px;">
+               <ul class="list-unstyled">
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">HTML</a> </li>
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">css</a> </li>
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">bootstrap</a> </li>
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">javascript</a> </li>
+
+
+               </ul>
+
+               </div>
+
+
+
+
+
+              <div class="col-md-3 mx-auto  mb-4">
+                  <h6 class="text-uppercase font-weight-bold text-white"> useful links</h6>
+                  <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width:110px; height:4px;">
+             <ul class="list-unstyled">
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">home</a> </li>
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">about</a> </li>
+                   <li class="my-2 text-uppercase  text-white"><a href="#" style="color:white;">services</a> </li>
+                   <li class="my-2 text-uppercase text-white"><a href="#" style="color:white;">contact us</a> </li>
+
+
+               </ul>
+
+          </div>
+
+
+
+               <div class="col-md-3 mx-auto  mb-2">
+                  <h6 class="text-uppercase font-weight-bold text-white"> contact</h6>
+                  <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width:75px; height:4px;">
+             <ul class="list-unstyled">
+                   <li class="my-2 text-uppercase text-white"><i class="fas fa-home mr-3"></i> N.H 2xy N**** mah** jalan*** </li>
+                   <li class="my-2  text-white"><i class="fas fa-mail-bulk mr-3"></i> mongiavipul234@gmail.com </li>
+                   <li class="my-2 text-uppercase  text-white"><i class="fas fa-phone mr-3"></i> 7696128706</li>
+                   <li class="my-2 text-uppercase text-white"><i class="fas fa-print mr-3"></i> 7696128706</li>
+
+
+               </ul>
+
+
+              </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="footer-copyright text-center py-3 ">
+          <p class="text-white"> &copy; Copyright <a href="#" style="color:white;">mongiavipul.com</a></p>
+          <p class="text-white"> Designed by Vipul Mongia</p>
+
+
+
+
+
+      </div>
+  </footer>
+
+
+
+  </body>
+</html>

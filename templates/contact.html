@@ -1,0 +1,168 @@
+{% extends 'basic.html' %}
+{% block title %} Contact us {% endblock %}
+{% block body %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ice Creams</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">about</a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="spinbutton" data-bs-toggle="dropdown" aria-expanded="false">
+            services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="services.html">Softy</a></li>
+            <li><a class="dropdown-item" href="dryfruit.html">Dry fruits ice creams</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="cake.html">Cake ice creams</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+</nav>
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+  {{ message }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="close">
+  <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor %}
+{% endif %}
+
+
+
+
+
+
+
+
+
+<div class="container  ">
+  <h1 class=" my-4 display-1 text-center">Contact Us  </h1>
+
+  <h3 class="text-center">WE ARE GOOD LISTENERS</h3>
+  <h4 class="text-center">Want to know more about us and didn’t know whom to ask? Call us on 7696128706</h4>
+
+</div>
+
+<div class="container">
+
+<form class="needs-validation" novalidate method="post" action="/contact">
+  {% csrf_token %}
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="firstname">First name</label>
+      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="lastname">Last name</label>
+      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="phone">Contact No</label>
+      <input type="text" class="form-control" id="phone" name="phone" placeholder="Contact Number" required>
+      <div class="invalid-feedback">
+        Please provide a valid Contact Number.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="email">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+<!--          <span class="input-group-text" id="inputGroupPrepend">@</span>-->
+        </div>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="state">State</label>
+      <input type="text" class="form-control" id="state" name="state" placeholder="State" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="complaint">Please Tell Your Reason For Your Enquiry :- </label>
+<!--      <input type="text" class="form-control" id="complaint" rows="3"  placeholder="&#45;&#45;Refine your query&#45;&#45;" required>-->
+       <textarea class="form-control" id="complaint" rows="3" name="complaint" placeholder="--Refine your query-- " required></textarea>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+<!--     <div class="form-group mb-3 ">-->
+<!--    <label for="desc"></label>-->
+<!--    <textarea class="form-control" id="desc" rows="3" placeholder="Additional Information (Optional) "></textarea>-->
+<!--  </div>-->
+
+
+
+
+  </div>
+  <button class="btn btn-primary mb-5" type="submit">Submit </button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</div>
+  {% endblock %}
+

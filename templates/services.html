@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Services</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ice Creams</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">about</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="spinbutton" data-bs-toggle="dropdown" aria-expanded="false">
+            services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url 'services'%} ">Softy</a></li>
+            <li><a class="dropdown-item" href="{% url 'dryfruit'%} ">Dry fruits ice creams</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item" href="/cake">Cake ice creams</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="container  ">
+
+     <div class=" display-3 my-4 text-dark "><u><i><strong>SOFTY'S AND CONES</strong></i></u></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c19.jpg" class="d-block w-100" alt="..." style="width:200px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">Butterscotch is a popular confectionary made from dairy products, such as milk, cream, brown sugar and butter,
+tasty and healthy butter in all every byte .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                  <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!--<a  href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">softy's</a>-->
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c21.jpg" class="d-block w-100" alt="..." style="width:200px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">A creamy vanilla delight packed in a crispy cone coated topped with some chocolate and some gems , fennel. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                  <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c23.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">Creamy,light vanilla ice cream made with coconut milk and packed with crushed oreo pieces whicb is mellowed by a healthy amount.  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                   <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c26.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+              <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+<!--<a  href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">softy's</a>-->
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c25.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c27.jpeg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                      <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+<div class="container">
+<!--     <div class=" display-3 my-4 text-dark "><u><i><strong>SOFTY'S AND CONES</strong></i></u></div>-->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c28.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                  <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+<!--<a  href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">softy's</a>-->
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c29.jpeg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                   <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="/static/c30.jpg" class="d-block w-100" alt="..." style="width:400px;height:300px;">
+
+            <div class="card-body">
+              <p class="card-text">This is a cone ice cream which lies in softy category, flavour of this ice cream is chocolate . </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<!--                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+                <a href="/bynow" ><button type="button" class="btn btn-outline-success btn-sm  ">Buy Now</button></a>
+                </div>
+<!--                <small class="text-muted">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d4ef3a9c89.js" crossorigin="anonymous"></script>
+    <title>Buy Now</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ice Creams</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">about</a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="spinbutton" data-bs-toggle="dropdown" aria-expanded="false">
+            services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="services.html">Softy</a></li>
+            <li><a class="dropdown-item" href="dryfruit.html">Dry fruits ice creams</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="cake.html">Cake ice creams</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--buy now-->
+
+
+
+<div class="container  ">
+  <h1 class=" my-4 display-1 text-center">BUY NOW </h1>
+
+<!--  <h3 class="text-center">WE ARE GOOD LISTENERS</h3>-->
+  <h4 class="text-center">Hope You Like It</h4>
+
+</div>
+
+<div class="container">
+
+<form class="needs-validation" novalidate method="post" action="/bynow">
+  {% csrf_token %}
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="firstname">Customer Name</label>
+      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Customer Name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="form-group col-md-3 mb-3">
+    <label for="icecreamfl">Choose Ice Cream </label>
+    <select class="form-control" id="icecreamfl" name="icecreamfl">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+    <div class="col-md-3 mb-3">
+        <label for="quantity">Quantity (between 1 and 6) Per Kg :</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="6" placeholder="0" required>
+
+<!--      <input type="text" class="form-control" id="phone" name="phone" placeholder="Contact Number" required>-->
+      <div class="invalid-feedback">
+        Please provide a valid quantity.
+      </div>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+      <label for="phone">Contact No</label>
+      <input type="text" class="form-control" id="phone" name="phone" placeholder="Contact Number" required>
+      <div class="invalid-feedback">
+        Please provide a valid Contact Number.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="email">Customer Email I'D</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+<!--          <span class="input-group-text" id="inputGroupPrepend">@</span>-->
+        </div>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="city">Address</label>
+      <input type="text" class="form-control" id="city" name="city" placeholder="Address" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+<!--    <div class="col-md-3 mb-3">-->
+<!--      <label for="state">State</label>-->
+<!--      <input type="text" class="form-control" id="state" name="state" placeholder="State" required>-->
+<!--      <div class="invalid-feedback">-->
+<!--        Please provide a valid state.-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-md-3 mb-3">-->
+<!--      <label for="complaint">Please Tell Your Reason For Your Enquiry :- </label>-->
+<!--&lt;!&ndash;      <input type="text" class="form-control" id="complaint" rows="3"  placeholder="&#45;&#45;Refine your query&#45;&#45;" required>&ndash;&gt;-->
+<!--       <textarea class="form-control" id="complaint" rows="3" name="complaint" placeholder="&#45;&#45;Refine your query&#45;&#45; " required></textarea>-->
+<!--      <div class="invalid-feedback">-->
+<!--        Please provide a valid state.-->
+<!--      </div>-->
+<!--    </div>-->
+<!--     <div class="form-group mb-3 ">-->
+<!--    <label for="desc"></label>-->
+<!--    <textarea class="form-control" id="desc" rows="3" placeholder="Additional Information (Optional) "></textarea>-->
+<!--  </div>-->
+
+
+
+
+  </div>
+  <button class="btn btn-primary mb-5" type="submit">Submit </button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</div>
+</body>
+</html>
